@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".register">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/icon1"
+            android:layout_width="34dp"
+            android:layout_height="28dp"
+            android:layout_marginLeft="171dp"
+            android:layout_marginTop="28dp"
+            android:src="@drawable/icon1" />
+
+        <TextView
+            android:id="@+id/header1"
+            android:layout_width="205dp"
+            android:layout_height="31dp"
+            android:layout_marginLeft="44dp"
+            android:layout_marginTop="101dp"
+            android:width="205dp"
+            android:text="@string/creatAccountTextView"
+            android:textColor="@color/black" />
+
+        <TextView
+            android:id="@+id/text_view_welcom"
+            android:layout_width="287dp"
+            android:layout_height="42dp"
+            android:layout_marginLeft="44dp"
+            android:layout_marginTop="40dp"
+            android:hint="Welcome friend, enter your details so lets get started in ordering food."
+            android:text="@string/text_view_welcom"
+            android:textColorHint="@color/black"
+            app:lineHeight="21dp" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/email_adress"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textColorHint="@color/white">
+
+            </com.google.android.material.textfield.TextInputLayout>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="334dp"
+                android:layout_height="76dp"
+                android:layout_marginLeft="21dp"
+                android:layout_marginTop="239dp"
+                android:hint="Email adress"
+                android:text="@string/email_adress" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <com.google.android.material.textfield.TextInputEditText
+
+                android:layout_width="334dp"
+                android:layout_height="76dp"
+                android:layout_marginLeft="21dp"
+                android:hint="Enter password"
+                android:text="@string/pwd" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/text_login_to_accompte"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="110dp"
+        android:ems="10"
+        android:inputType="text"
+        android:text="@string/text_login_to_accompte"
+        android:textColor="@color/primary_color" />
+
+    <Button
+        android:id="@+id/navigate_home"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="561dp"
+        android:layout_marginRight="20dp"
+        android:width="335px"
+        android:height="125px"
+        android:backgroundTint="#FF774C"
+        android:text="@string/buttonCreatAccount"
+        android:textColor="#fcfcfc"
+        app:cornerRadius="20px" />
+
+</FrameLayout>
